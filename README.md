@@ -38,6 +38,17 @@ Go to AWS EC2 Console and configure:
 ---
 
 ### 2️⃣ Install K3s
-
+```bash
 sudo apt update
 curl -sfL https://get.k3s.io | sh -
+
+
+-**Configure kubectl:**
+
+mkdir -p ~/.kube
+sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
+sudo chown $USER:$USER ~/.kube/config
+chmod 600 ~/.kube/config
+export KUBECONFIG=~/.kube/config
+
+
