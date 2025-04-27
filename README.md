@@ -21,8 +21,8 @@ Guide to deploying a Python Flask app on a Single-Node K3s Kubernetes cluster us
 ### 1️⃣ Launch EC2 Instance
 Go to AWS EC2 Console and configure:
 
-- **Name:**  k3s-demo-server
-- **AMI:** Ubuntu Server 22.04 LTS
+- **Name:**  `k3s-demo-server`
+- **AMI:** `Ubuntu Server 22.04 LTS`
 - **Instance Type:** `t3.medium`
 - **VPC:** Default
 - **Subnet:** Public Subnet
